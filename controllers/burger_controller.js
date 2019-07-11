@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
 
-var burger = require("../models/burger");
+var burger = require("../models/burger.js");
 
 router.get("/", function(req, res){
     burger.selectAll(function(data){
@@ -12,6 +12,7 @@ router.get("/", function(req, res){
 });
 
 router.post("/api/burgers", function(req, res){
+    console.log(req.body);
     burger.createOne("kind", [req.body.kind], function(result){
         res.json({id: result.insertId});
     });
