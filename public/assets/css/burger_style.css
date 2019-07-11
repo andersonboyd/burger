@@ -1,0 +1,92 @@
+body{
+    background: url("/assets/img/burger.jpg") no-repeat left center fixed;
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Shrikhand", cursive;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-style: italic;
+    color: #872A27;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.75rem;
+    padding-inline-start: 18vw;
+    color: #111347;
+}
+
+
+ul{
+    list-style: none;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+li{
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.eat{
+    float: right;
+}
+
+.eat, #order{
+    padding: 4px 5px;
+    border: 1px solid #872A27;
+    border-radius: 15%;
+    font-weight: bold;
+    color:white;
+
+}
+
+.eat {
+    background-color: #872A27;
+}
+
+#order{
+    background-color: #111347;
+}
+
+.create-burger{
+    position: relative;
+    left: 15vw;
+}
+
+.form-group{
+    width: 25%;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+#wrapper{
+    width: 100%;
+    height: calc(100vh - 40%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+#ready span{
+    border: 2px solid #111347;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#devoured span{
+    border: 2px solid #872A27;
+    padding: 5px;
+    font-weight: bold;
+    background-color: white;
+    color: #111347;
+}

@@ -1,35 +1,37 @@
 <h1>Welcome to Eat-Da-Burger!</h1>
+<br>
+<br>
+<br>
+<div id="wrapper">
+    <div id="ready">
+        <ul>
+            {{#each burgers}}
+                {{#unless devoured}}
+                    {{> burgers/burger-block devoured=false}}
+                {{/unless}}
+            {{/each}}
+        </ul>
+    </div>
 
-<div id="burger-img"></div>
-
-<div id="ready">
-    <h2>Order up!</h2>
-    <ul>
-        {{#each burgers}}
-            {{#unless devoured}}
-                {{> burgers/burger-block devoured=false}}
-            {{/unless}}
-        {{/each}}
-    </ul>
+    <div id="devoured">
+        <ul>
+            {{#each burgers}}
+                {{#if devoured}}
+                    {{> burgers/burger-block devoured=true}}
+                {{/if}}
+            {{/each}}
+        </ul>
+    </div>
 </div>
-
-<div id="devoured">
-    <ul>
-        {{#each burgers}}
-            {{#if devoured}}
-                {{> burgers/burger-block devoured=true}}
-            {{/if}}
-        {{/each}}
-    </ul>
-</div>
-
+<br>
+<br>
 <div id="addOrder">
     <h2>Add your order!</h2>
     <form class="create-burger">
         <div class="form-group">
-            <label for="burg">Whatchu want?</label>
+            <label id="label" for="burg">Whatchu want?</label>
             <textarea id="burg" name="kind" rows="3" columns="10"></textarea>
         </div>
-        <button type="submit">Comin' right up!</button>
+        <button id="order" type="submit">Comin' right up!</button>
     </form>
 </div>
