@@ -10,10 +10,12 @@ var burger = {
         orm.createOne("burgers", column, value, function(res){
             cb(res);
         });
-    }//,
-    //updateOne: function(){
-
-    //}
+    },
+    updateOne: function(colVals, condition, cb){
+        orm.updateOne("burgers", colVals, condition, function(res){
+            cb(res);
+        });
+    }
 };
 
 module.exports = burger;
