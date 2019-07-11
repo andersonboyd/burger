@@ -12,14 +12,14 @@ h1{
     font-weight: bold;
     margin-bottom: 0;
     font-style: italic;
-    color: #872A27;
+    color: #CC302F;
     text-align: center;
 }
 
 h2{
     font-size: 1.75rem;
     padding-inline-start: 18vw;
-    color: #111347;
+    color: #C22D75;
 }
 
 
@@ -41,7 +41,7 @@ li{
 
 .eat, #order{
     padding: 4px 5px;
-    border: 1px solid #872A27;
+    border: 1px solid #CC302F;
     border-radius: 15%;
     font-weight: bold;
     color:white;
@@ -49,11 +49,11 @@ li{
 }
 
 .eat {
-    background-color: #872A27;
+    background-color: #CC302F;
 }
 
 #order{
-    background-color: #111347;
+    background-color: #C22D75;
 }
 
 .create-burger{
@@ -84,7 +84,7 @@ li{
 }
 
 #devoured span{
-    border: 2px solid #872A27;
+    border: 2px solid #CC302F;
     padding: 5px;
     font-weight: bold;
     background-color: white;
