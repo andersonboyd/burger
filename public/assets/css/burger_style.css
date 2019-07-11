@@ -47,7 +47,7 @@ li{
 .eat, #order{
     padding: 4px 5px;
     border: 1px solid #CC302F;
-    border-radius: 15%;
+    border-radius: 10px;
     font-weight: bold;
     color:white;
 
